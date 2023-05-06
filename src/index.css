@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #11131e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.modal {
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal-body {
+  height: max-content;
+  padding: 30px;
+  border-radius: 10px;
+  background: #fff;
+  width: max-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+}
+
+.modal-head {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.modal-footer {
+  margin-top: 20px;
+}
+
+.modal-btn,
+.modal-trigger {
+  margin: auto;
+  background-color: #11131e;
+  color: #fff;
+  width: max-content;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.1s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.modal-trigger {
+  background-color: #fff;
+  color: #11131e;
+}
+.modal-btn:active,
+.modal-trigger:active {
+  scale: 0.9;
+}
+
+.modal-open {
+  scale: 1;
+  opacity: 1;
+  z-index: 1;
+}
+
+.modal-close {
+  opacity: 0;
+  scale: 0.8;
+  z-index: -1;
+}
