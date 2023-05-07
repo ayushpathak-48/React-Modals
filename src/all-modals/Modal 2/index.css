@@ -1,0 +1,13 @@
+.modal-open {
+  scale: 1;
+  opacity: 1;
+  z-index: 1;
+  top: 0;
+}
+
+.modal-close {
+  opacity: 0;
+  scale: 0.8;
+  z-index: -1;
+  top: -200px;
+}
